@@ -6,5 +6,55 @@
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="left-side"></div>
+      <div class="right-side">
+        <div class="heading">
+          <p class="text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+          <p class="text">Sign up <i>now</i> to get started.</p>
+          <p class="text">You <i>know</i> you want to.</p>
+        </div>
+        <div>
+          <form action="">
+            <p class="text">Let's do this!</p>
+            <div class="rows">
+              <p>
+                <label for="first_name">FIRST NAME</label><br />
+                <input type="text" name="first_name" id="first_name" />
+              </p>
+              <p>
+                <label for="last_name">LAST NAME</label><br />
+                <input type="text" name="last_name" id="last_name" />
+              </p>
+            </div>
+            <div class="rows">
+              <p>
+                <label for="email">EMAIL</label><br />
+                <input type="email" name="email" id="email" />
+              </p>
+              <p>
+                <label for="phn_num">PHONE NUMBER</label><br />
+                <input type="tel" name="phone_num" id="phn_num" />
+              </p>
+            </div>
+            <div class="rows">
+              <p>
+                <label for="pwd">PASSWORD</label><br />
+                <input type="password" name="pwd" id="pwd" />
+              </p>
+              <p>
+                <label for="con_pwd">CONFIRM PASSWORD</label><br />
+                <input type="password" name="confirm_password" id="con_pwd" />
+              </p>
+            </div>
+          </form>
+        </div>
+        <div>
+          <button type="submit">Create Account</button>
+          <p class="text" id="log_in_txt">Already have an account? <span>Log in</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

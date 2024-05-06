@@ -1,1 +1,28 @@
-/*# sourceMappingURL=styles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.left-side {
+  height: 100vh;
+  width: 35vw;
+  background-image: url(./assets/jules-marvin-eguilos-O3oQg9CPy1k-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.right-side {
+  background-color: #49565c;
+  width: 65vw;
+}
+
+.rows {
+  display: flex;
+}
