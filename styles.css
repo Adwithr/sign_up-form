@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -18,11 +19,100 @@
   background-position: center;
 }
 
+.text {
+  font-family: Roboto;
+  margin-left: 2.5em;
+  font-weight: 530;
+  font-size: 21px;
+  color: #e0d8e3;
+}
+
 .right-side {
-  background-color: #49565c;
+  background-color: #17252b;
   width: 65vw;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3em;
+}
+
+.heading {
+  padding-right: 11em;
+}
+
+.last-txt {
+  margin-top: 1.6em;
+  margin-bottom: 2.5em;
+}
+
+.form-header {
+  margin-left: calc(1.8em + 2px);
+}
+
+.form {
+  background-color: #1d2c32;
+  width: 65vw;
+  font-family: Roboto;
+  border-radius: 6px;
+  padding: 1em;
+  padding-top: 1.3em;
 }
 
 .rows {
   display: flex;
+  margin: 1em;
+  margin-left: 2.5em;
+  gap: 5em;
+}
+
+input {
+  padding: 5.5px;
+  border-radius: 8px;
+  width: 235px;
+  background-color: hsl(268, 16%, 76%);
+  border: 1px solid #152026;
+}
+
+input:invalid:focus {
+  outline: none;
+  border-width: 2px;
+  border-color: red;
+}
+
+input:valid:focus {
+  outline: none;
+  border-width: 2px;
+  border-color: green;
+}
+
+label {
+  font-size: small;
+  color: #e0d8e3;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: odin;
+  src: url(./assets/Norse-Bold.otf);
+}
+.odin-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: odin;
+  background-color: black;
+  opacity: 0.5;
+  position: relative;
+  top: 20vh;
+}
+
+#logo {
+  height: 130px;
+  width: 130px;
+  font-weight: 900;
+}
+
+#logo-text {
+  font-size: 7em;
+  color: white;
+  font-weight: 900;
 }

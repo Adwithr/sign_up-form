@@ -8,50 +8,55 @@
   </head>
   <body>
     <div class="container">
-      <div class="left-side"></div>
+      <div class="left-side">
+        <div class="odin-logo">
+          <img src="./assets/odin-lined.png" alt="odin logo" id="logo" />
+          <p id="logo-text">ODIN</p>
+        </div>
+      </div>
       <div class="right-side">
         <div class="heading">
           <p class="text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
           <p class="text">Sign up <i>now</i> to get started.</p>
-          <p class="text">You <i>know</i> you want to.</p>
+          <p class="text last-txt">You <i>know</i> you want to.</p>
         </div>
-        <div>
-          <form action="">
-            <p class="text">Let's do this!</p>
+        <div class="form">
+          <form id="signup-form">
+            <p class="text form-header">Let's do this!</p>
             <div class="rows">
               <p>
                 <label for="first_name">FIRST NAME</label><br />
-                <input type="text" name="first_name" id="first_name" />
+                <input type="text" name="first_name" id="first_name" autocomplete="off" required />
               </p>
               <p>
                 <label for="last_name">LAST NAME</label><br />
-                <input type="text" name="last_name" id="last_name" />
+                <input type="text" name="last_name" id="last_name" autocomplete="off" required />
               </p>
             </div>
             <div class="rows">
               <p>
                 <label for="email">EMAIL</label><br />
-                <input type="email" name="email" id="email" />
+                <input type="email" name="email" id="email" autocomplete="off" required />
               </p>
               <p>
                 <label for="phn_num">PHONE NUMBER</label><br />
-                <input type="tel" name="phone_num" id="phn_num" />
+                <input type="tel" name="phone_num" id="phn_num" autocomplete="off" required />
               </p>
             </div>
             <div class="rows">
               <p>
                 <label for="pwd">PASSWORD</label><br />
-                <input type="password" name="pwd" id="pwd" />
+                <input type="password" name="pwd" id="pwd" required />
               </p>
               <p>
                 <label for="con_pwd">CONFIRM PASSWORD</label><br />
-                <input type="password" name="confirm_password" id="con_pwd" />
+                <input type="password" name="confirm_password" id="con_pwd" required />
               </p>
             </div>
           </form>
         </div>
-        <div>
-          <button type="submit">Create Account</button>
+        <div class="bottom-part">
+          <button type="submit" form="signup-form">Create Account</button>
           <p class="text" id="log_in_txt">Already have an account? <span>Log in</span></p>
         </div>
       </div>
