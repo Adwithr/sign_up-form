@@ -72,13 +72,13 @@ input {
   border: 1px solid #152026;
 }
 
-input:invalid:focus {
+input:focus:invalid {
   outline: none;
   border-width: 2px;
   border-color: red;
 }
 
-input:valid:focus {
+input:valid {
   outline: none;
   border-width: 2px;
   border-color: green;
@@ -115,4 +115,29 @@ label {
   font-size: 7em;
   color: white;
   font-weight: 900;
+}
+
+#create-acc {
+  margin: 28px;
+  margin-left: 4em;
+  color: #e0d8e3;
+  background-color: #2c454c;
+  border: none;
+  border-radius: 12px;
+  padding: 15px 40px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#create-acc:hover {
+  background-color: hsl(193, 27%, 28%);
+}
+
+#create-acc:active {
+  background-color: hsl(193, 27%, 18%);
+}
+
+#log-in {
+  color: hsl(193, 27%, 44%);
+  cursor: pointer;
 }
