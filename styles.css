@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +18,17 @@
   background-image: url(./assets/jules-marvin-eguilos-O3oQg9CPy1k-unsplash.jpg);
   background-size: cover;
   background-position: center;
+  text-align: center;
+}
+
+.credits {
+  margin-top: 38em;
+  font-size: 14px;
+  color: #e0d8e3;
+}
+
+.credits a {
+  color: #e0d8e3;
 }
 
 .text {
@@ -55,6 +67,7 @@
   border-radius: 6px;
   padding: 1em;
   padding-top: 1.3em;
+  position: relative;
 }
 
 .rows {
@@ -94,6 +107,7 @@ label {
   font-family: odin;
   src: url(./assets/Norse-Bold.otf);
 }
+
 .odin-logo {
   display: flex;
   justify-content: center;
@@ -140,4 +154,13 @@ label {
 #log-in {
   color: hsl(193, 27%, 44%);
   cursor: pointer;
+}
+
+.not-match {
+  display: none;
+  color: red;
+  font-size: small;
+  position: absolute;
+  top: 18.4em;
+  left: 4.4em;
 }
