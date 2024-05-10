@@ -13,8 +13,10 @@
 }
 
 .left-side {
-  height: 100vh;
-  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 35%;
   background-image: url(./assets/jules-marvin-eguilos-O3oQg9CPy1k-unsplash.jpg);
   background-size: cover;
   background-position: center;
@@ -22,7 +24,7 @@
 }
 
 .credits {
-  margin-top: 38em;
+  margin-top: auto;
   font-size: 14px;
   color: #e0d8e3;
 }
@@ -41,10 +43,11 @@
 
 .right-side {
   background-color: #17252b;
-  width: 65vw;
+  width: 65%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 3em;
+  padding-top: 3.4%;
 }
 
 .heading {
@@ -52,8 +55,8 @@
 }
 
 .last-txt {
-  margin-top: 1.6em;
-  margin-bottom: 2.5em;
+  margin-top: 4.42%;
+  margin-bottom: 6.9%; /* 52.5 */
 }
 
 .form-header {
@@ -62,12 +65,13 @@
 
 .form {
   background-color: #1d2c32;
-  width: 65vw;
+  width: 100%;
   font-family: Roboto;
   border-radius: 6px;
   padding: 1em;
   padding-top: 1.3em;
   position: relative;
+  min-width: 0;
 }
 
 .rows {
